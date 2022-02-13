@@ -1,0 +1,103 @@
+@import '../../global.scss';
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: $mainColor;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    transition: all 1s ease;
+    
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+
+                .icon{
+                    font-size: 30px;
+                    margin-right: 5px;
+                    transition: all 1s ease;
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .logo{
+            font-size: 40px;
+            font-weight: 700;
+            text-decoration: none;
+            color: inherit;
+            margin-right: 40px;
+
+            h1{
+                font-size: inherit;
+            }
+
+        }
+        .right {
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                .line{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 1s ease;
+                    z-index: 5;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: white;
+
+        .icon{
+            color: white;
+        }
+        .hamburger{
+            .line{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    background-color: white;
+                    transform:translateX(100px);
+
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+
+            }
+        }
+    }
+}
