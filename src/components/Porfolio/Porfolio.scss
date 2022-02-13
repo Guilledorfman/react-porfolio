@@ -38,16 +38,21 @@
             cursor:default ;
         }
         .readmore-text{
-            background-color: red;
+            background-color: rgba(63, 63, 63, 0.883);
             position: absolute;
-            z-index: 500;
+            z-index: 400;
             height: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             opacity: 0;
-
+            top: -100%;
+            transition: all 1s ease;
+            &.active{
+                opacity: 1;
+                top: 0;
+            }
             p{
                 width: calc(100% - 60px);
                 color: white;
@@ -58,7 +63,7 @@
         }
         .nombre{
             position: absolute;
-            bottom: 30px;
+            bottom: 50px;
             left: 30px;
             margin: 0;
             font-size: 2rem;
@@ -71,13 +76,13 @@
 
         .text{
             position: absolute;
-            top: 30px;
+            bottom: 30px;
             left: 30px;
-            font-size: 1.5rem;
+            font-size: 1rem;
             display: flex;
             text-align: left;
             color: white;
-            font-weight: 700;
+            font-weight: 100;
             opacity: 0;
             transition: opacity 1s;
         }
@@ -108,13 +113,20 @@
             }
         }
         .readmore{
+            z-index: 500;
             position: absolute;
-            right: 30px;
-            top: 30px;
+            right: calc(50% - 50px);
             color: white;
             opacity: 0;
             transition: opacity 3s;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            bottom: calc(100% - 100px);
+            transition: all 1s ease;
+            
             &:hover{
                 background-color: rgba(255, 255, 255, 0.109);
                 cursor: pointer;
@@ -142,18 +154,25 @@
                     }
                     .bar1{
                         transform: rotateZ(45deg) translate(-3px, 10px);
-                        &.active{
-                            transform: rotateZ(45deg);
-                        }
                     }
                     .bar2{
                         transform: rotateZ(-45deg) translate(3px, 10px);
 
-                        &.active{
-                            transform: rotateZ(-45deg);
 
+                    }
+                }
+            }
+
+            &.active{
+                bottom: -20px;
+                .button{
+                    .readmore-bars{
+                        .bar1{
+                            transform: rotateZ(45deg);
                         }
-
+                        .bar2{
+                            transform: rotateZ(-45deg);
+                        }
                     }
                 }
             }
@@ -192,6 +211,11 @@
     #container{
         flex-direction: column;
         .caja{
+            .readmore-text{
+                p{
+                    font-size: 1rem;
+                }
+            }
             .nombre{
                 font-size: 1.3rem;
             }
