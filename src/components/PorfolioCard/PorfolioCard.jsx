@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import CodeIcon from '@mui/icons-material/Code';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
-const PorfolioCard = ({name, img, subtitle, text, cajaClass, index, setActiveNumber, tech}) => {
+const PorfolioCard = ({name, img, subtitle, text, cajaClass, index, setActiveNumber, tech, live, code}) => {
 
 
 const [ readMoreActive, setReadMoreActive ] = useState(false)
@@ -43,11 +43,11 @@ const techList = tech.map((e, index)=>{
                 </div>
             </div>
             <div className="buttons">
-                <a href="">
+                <a href={live} target='_blank'>
                         <VisibilityIcon sx={{ fontSize: 50 }}/>
                     LIVE DEMO
                     </a>
-                <a href="">
+                <a href={code} target='_blank'>
                         <CodeIcon sx={{ fontSize: 50 }}/>
                     CODE
                 </a>
