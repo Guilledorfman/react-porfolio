@@ -101,3 +101,14 @@
         }
     }
 }
+
+@media(max-width:500px) {
+    .left{
+        .itemContainer{
+            .icon{
+                display: none;
+            }
+        }
+    }
+
+}

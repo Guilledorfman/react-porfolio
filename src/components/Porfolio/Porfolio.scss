@@ -1,9 +1,17 @@
 .porfolio{
-    background-color: lightseagreen;
     position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    height: 100%;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 100;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
 }
 #porfolio{
     position: absolute;
@@ -37,6 +45,22 @@
         &.active:hover{
             cursor:default ;
         }
+        ul{
+            width: 100%;
+            position: absolute;
+            list-style: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            left: 30px;
+            top: 30px;
+            justify-content: space-evenly;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+        }
         .readmore-text{
             background-color: rgba(63, 63, 63, 0.883);
             position: absolute;
@@ -44,11 +68,13 @@
             height: 100%;
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             opacity: 0;
             top: -100%;
             transition: all 1s ease;
+
             &.active{
                 opacity: 1;
                 top: 0;
@@ -56,7 +82,7 @@
             p{
                 width: calc(100% - 60px);
                 color: white;
-                font-size: 1.3rem;
+                font-size: 1rem;
                 text-align: justify;
 
             }
@@ -128,7 +154,7 @@
             transition: all 1s ease;
             
             &:hover{
-                background-color: rgba(255, 255, 255, 0.109);
+                // background-color: rgba(255, 255, 255, 0.109);
                 cursor: pointer;
             }
             
@@ -181,6 +207,9 @@
 
         &.active{
             flex: 5;
+            ul{
+                opacity: 1;
+            }
             .nombre{
                 opacity: 1;
             }
@@ -207,10 +236,19 @@
 
 
 
-@media(max-width:480px) {
+@media(max-width:700px) {
     #container{
         flex-direction: column;
         .caja{
+            
+            .readmore{
+                right: 30px;
+                top: 30px;
+
+                &.active{
+                    top: calc(100% - 100px);
+                }
+            }
             .readmore-text{
                 p{
                     font-size: 1rem;
@@ -225,6 +263,53 @@
         }
     }
     
+}
+
+@media(max-height:700px) {
+    .porfolio{
+        h2{
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        
+    }
+    #container{
+        height: 100%;
+        .caja{
+            flex: .3;
+
+            .readmore{
+                top: 0;
+                .button{
+                    width: 100%;
+                    i{
+                        position: absolute;
+                        left: 65px;
+                        top: 30px;
+                    }
+                    .readmore-bars{
+                        transform: scale(70%);
+                    }
+                    
+                }
+
+                &.active{
+                    top: calc(100% - 70px);
+                }
+            }
+            ul{
+                font-size: .8rem;
+            }
+
+            .buttons{
+                a{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
 }
 // .proyect-cont{
 //     margin: auto;
