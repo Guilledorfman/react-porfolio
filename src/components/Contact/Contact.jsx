@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="right">
-          <p>Or leave a message here:</p>
+          <p>Or you can leave a message here:</p>
           <input type="text" placeholder='name' />
           <input type="text" placeholder='email' />
           <textarea placeholder='message' />

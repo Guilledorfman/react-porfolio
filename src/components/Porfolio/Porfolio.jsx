@@ -28,21 +28,21 @@ const Porfolio = () => {
     },
     {
       name: 'La Bobeda de recetas judías',
-      img: 'https://images.unsplash.com/photo-1528732719667-0058acb84755?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80',
+      img: '"src/assets/bobeda.jpg"',
       subtitle: 'Jewish food recipes',
       text: "I learned a lot from this project. It was my first time using local storage and working with AJAX and JQuery. This Jewish food recipe database was a little nod to my jewish heritage, you can search a recipe by name or by one or more ingredients, so you can type whatever you have available and see what can you make with that.",
       tech: ['HTML', 'CSS', 'Javascript', 'JQuery']
     },
     {
       name: 'Dnd Dice Roll',
-      img: 'https://images.unsplash.com/photo-1484318571209-661cf29a69c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+      img: '"src/assets/roll.jpg"',
       subtitle: 'Dice roller',
       text: "When the pandemic started and physical reunions where no longer possible, my D&D (Dungeons & Dragons) sessions had to be done virtually so I needed a quick way to roll the dices. These were my first steps in Javascript so I'm very happy with the result, it has errors and messy code but I leave it as it is so I can look back and learn from my mistakes. ",
       tech: ['HTML', 'CSS', 'Javascript']
     },
     {
       name: 'Analog/Digital Clock',
-      img: 'https://images.unsplash.com/photo-1556967789-e6512208cf68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80',
+      img: '"src/assets/clock.jpg"',
       subtitle: '',
       text: 'A little quick project to practice CSS. Warning: everything is a <div>',
       tech: ['HTML', 'CSS', 'Javascript']

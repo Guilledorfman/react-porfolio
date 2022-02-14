@@ -13,7 +13,9 @@ const TopBar = ({menuOpen, setMenuOpen}) => {
           <div className="wrapper">
 
             <div className="left">
-                <a href="#intro" className='logo'><h1>Logo.</h1></a>
+                <a href="#intro" className='logo'>
+                  <img src="./src/assets/gdlogo.png" alt="Guillermo Dorfman"/>
+                </a>
                 <a href="https://github.com/Guilledorfman" target='_blank' className="itemContainer">
                     <GitHubIcon className="icon"/>
                 </a>

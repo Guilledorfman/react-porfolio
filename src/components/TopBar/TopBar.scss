@@ -7,7 +7,7 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     position: fixed;
     top: 0;
-    z-index: 30;
+    z-index: 3000;
     transition: all 1s ease;
     
     .wrapper{
@@ -47,8 +47,9 @@
             color: inherit;
             margin-right: 40px;
 
-            h1{
-                font-size: inherit;
+            img{
+                width: 40px;
+                
             }
 
         }
@@ -77,7 +78,13 @@
     &.active{
         background-color: $mainColor;
         color: white;
-
+        .left{
+            a{
+                img{
+                    filter: invert(100%);
+                }
+            }
+        }
         .icon{
             color: white;
         }
