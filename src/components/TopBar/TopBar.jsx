@@ -14,13 +14,13 @@ const TopBar = ({menuOpen, setMenuOpen}) => {
 
             <div className="left">
                 <a href="#intro" className='logo'><h1>Logo.</h1></a>
-                <a href="google.com" target='_blank' className="itemContainer">
+                <a href="https://github.com/Guilledorfman" target='_blank' className="itemContainer">
                     <GitHubIcon className="icon"/>
                 </a>
-                <a href="google.com" target='_blank' className="itemContainer">
+                <a href="https://www.linkedin.com/in/guille-dorfman/" target='_blank' className="itemContainer">
                     <LinkedInIcon className="icon"/>
                 </a>
-                <a href="google.com" target='_blank' className="itemContainer">
+                <a href="mailto: guillermodorfman@gmail.com" target='_blank' className="itemContainer">
                     <EmailIcon className="icon"/>
                 </a>
             </div>
