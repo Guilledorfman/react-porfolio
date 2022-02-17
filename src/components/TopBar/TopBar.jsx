@@ -14,7 +14,7 @@ const TopBar = ({menuOpen, setMenuOpen}) => {
 
             <div className="left">
                 <a href="#intro" className='logo'>
-                  <img src="./src/assets/gdlogo.png" alt="Guillermo Dorfman"/>
+                  <img src="https://res.cloudinary.com/dxoqq4yvo/image/upload/v1645052793/porfolio/gdlogo_alovpj.png" alt="Guillermo Dorfman"/>
                 </a>
                 <a href="https://github.com/Guilledorfman" target='_blank' className="itemContainer">
                     <GitHubIcon className="icon"/>

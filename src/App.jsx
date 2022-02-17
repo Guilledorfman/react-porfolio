@@ -7,6 +7,7 @@ import Works from './components/Works/Works'
 import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 import Menu from './components/Menu/Menu'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Skills/>
         <Porfolio/>
         <Contact/>
+        <Footer/>
       </div>
     </div>
   )
