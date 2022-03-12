@@ -23,7 +23,7 @@ function App() {
         <Skills/>
         <Porfolio/>
         <Contact/>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </div>
   )

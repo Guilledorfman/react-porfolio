@@ -10,42 +10,87 @@
         top: -70px;
     }
     .left{
-
         .img{
-            box-shadow:hsl(272, 62%, 17%) -18px 18px;
-            background-color: $mainColor; 
+            box-shadow:hsl(272, 63%, 17%) -10px 10px;
+            background-color: #4a13778a; 
             background-blend-mode:  luminosity;
             background-size: cover;
             width: 300px;
             height: 300px;
             object-fit: cover;
             border-radius: 100%;
-            background-image: url("https://www.seekpng.com/png/full/349-3499598_portrait-placeholder-placeholder-person.png");
+            background-image: url("https://res.cloudinary.com/dxoqq4yvo/image/upload/v1647107526/porfolio/fotos/IMG_20220222_135006238_itvxif.png");
+            // background-image: url("https://res.cloudinary.com/dxoqq4yvo/image/upload/v1647107527/porfolio/fotos/IMG_20220222_135006239_h3htf3.png");
             
         }
+       
     }
     .right{
         height: 80%;
+        margin-left: 50px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         justify-content: center;
+        .introduction{
+            .hello{
+                font-size: 1.5rem;
+            }
+            .name{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $mainColor;
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+        }
+        .intro-text{
+            text-align: justify;
+            text-justify: distribute;
+            width: 600px;
+            font-size: 1.5rem;
+            b{
+                color: $mainColor;
+            }
+        }
     }
 }
 
 @media(max-width:700px) {
     .intro{
         flex-direction: column;
+        justify-content: space-evenly;
         .left{
-            margin-top: 70px;
+            margin-top: 40px;
             .img{
                 margin: auto;
-                max-width: 80%;
-                max-height: 80%;
+                max-width: 220px;
+                max-height: 220px;
             }
         }
         .right{
-            margin-bottom: 100px;
+            align-items: center;
+            margin-left: 0;
+            .introduction{
+                .hello{
+                    font-size: 1.5rem;
+                }
+                .name{
+                    font-size: 1.5rem;
+                }
+
+            }
+            .intro-text{
+                text-align: justify;
+                text-justify: distribute;
+                width: 70%;
+                font-size: 1.5rem;
+                b{
+                    color: $mainColor;
+                }
+            }
         }
     }
 }

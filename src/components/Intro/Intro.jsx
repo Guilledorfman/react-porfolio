@@ -10,8 +10,11 @@ const Intro = () => {
       <div className="img"></div>
     </div>
     <div className="right">
-      <h1><Logo/></h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laudantium.</p>
+    <div className="introduction">
+        <p className="hello">Hello! I'm</p>
+        <h1 className="name">GUILLERMO DORFMAN</h1>
+      </div>
+      <p className="intro-text">A <b>front-end web developer</b> passionate about creating interactive applications and experiences on the web.</p>
     </div>
   </div>
   )

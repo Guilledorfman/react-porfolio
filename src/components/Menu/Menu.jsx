@@ -9,10 +9,10 @@ const Menu = ({menuOpen, setMenuOpen}) => {
             name:"About",direction:"#intro"
         },
         {
-            name:"Porfolio", direction:"#porfolio"
+            name:"Skills", direction:"#skills"
         },
         {
-            name:"Skills", direction:"#skills"
+            name:"Porfolio", direction:"#porfolio"
         },
         {
             name:"Contact", direction:"#contact"

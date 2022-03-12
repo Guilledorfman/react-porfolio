@@ -10,8 +10,8 @@ const Porfolio = () => {
       img: 'https://res.cloudinary.com/dxoqq4yvo/image/upload/v1645121194/porfolio/movietomoviemockup_hdnkaw.png',
       subtitle: 'Movie conection game',
       text: 'The idea is to conect one movie to another by linking the people that worked on it and try and find the shortest path between the two movies. There are a bunch of premade challenges like "E.T. (1982) to ALIEN (1979)" or "Dune (1984) to Dune (2021)" but you can also pick two random movies for a harder challenge.',
-      tech: ['React', 'REST API', 'CSS'],
-      live: 'https://cranky-kare-fff6a5.netlify.app/',
+      tech: ['React', 'React Router', 'REST API', 'SCSS'],
+      live: 'https://movie2movie.netlify.app/',
       code: 'https://github.com/Guilledorfman/movieApp-react'
     },
     {

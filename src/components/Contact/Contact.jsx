@@ -8,6 +8,22 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contact = () => {
+function sendEmail(e){
+  e.preventDefault();
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "guillermodorfman@gmail.com",
+      Password : "@5Sgufonomo0",
+      To : 'guillermodorfman@gmail.com',
+      From : "you@isp.com",
+      Subject : "This is the subject",
+      Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+
+}
+
   return( 
   
     <div id="contact" className="contact">  
@@ -31,13 +47,16 @@ const Contact = () => {
             <i>guillermodorfman@gmail.com</i>
           </div>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <p>Or you can leave a message here:</p>
-          <input type="text" placeholder='name' />
-          <input type="text" placeholder='email' />
-          <textarea placeholder='message' />
-          <button>SEND MESSAGE</button>
-        </div>
+          <form action="">
+            <input type="text" placeholder='name' required/>
+            <input type="text" placeholder='email' required/>
+            <input type="text" placeholder='phone' required/>
+            <textarea placeholder='message' required/>
+            <button onClick={sendEmail}>SEND MESSAGE</button>
+          </form>
+        </div> */}
       </div>
     </div>
   )
